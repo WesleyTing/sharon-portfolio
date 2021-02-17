@@ -1,0 +1,58 @@
+// Top-bar Styles
+
+.top-bar{
+    position: relative;
+}
+
+// Overlay JS Fiddle at: http://jsfiddle.net/Paulie_D/T5pX2/7/
+.overlay {
+    opacity: 0;
+    position: fixed; 
+    width: 95%; 
+    height: 98%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(43, 43, 43, 0.9); 
+    z-index: 2; 
+    margin: auto;
+    backdrop-filter: blur(3px);
+    transition: opacity 0.5s ease-in-out;
+
+    .show &{
+        display: block;
+        opacity: 1;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 1.8rem;
+
+    }
+
+    li a{
+        color: white;
+
+        list-style-type: none;
+        cursor: pointer;
+        text-decoration: none;
+        line-height: 5rem;
+        
+
+        &:hover {
+            color: $brand-color;
+            text-decoration: none;
+        }
+    }
+
+    .active-page a{
+        font-weight: bold;
+        color: $brand-color;
+    }
+}
+
+
+
