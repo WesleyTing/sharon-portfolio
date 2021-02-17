@@ -7,6 +7,9 @@
  */
 html {
   box-sizing: border-box;
+  overflow-x: hidden; // Mainly prevents the hamburger button
+                      // from expanding the html to the right
+
 }
 
 /**
