@@ -1,3 +1,65 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.resume-button {
+    background-color: $brand-color;
+    border: none;
+    padding: 12px 32px;
+    position: relative;
+    margin-top: 5rem;
+    border-radius: 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    display: block;
+    width: 9rem;
+    height: 3rem;
+
+    &:hover {
+        color: black;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 9rem;
+        height: 3rem;
+        top: 30%;
+        left: 10%;
+        border: 2px solid $brand-color;
+        z-index: 1;
+    }
+
+}
+
+.down-arrow{
+    margin-top:  3rem;;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 5rem auto;
+    display: block;
+    outline: none;
+
+    @include on-event  {
+        color:black;
+    }
+}
+
+#back2top {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(120, 120, 120);
+    color: white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0;
+
+    @include on-event  {
+        background-color:black;
+    }
+    
+}
