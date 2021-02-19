@@ -8,19 +8,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="wrapper">
 
-
-
         <header>
             <div class="top-bar">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Portfolio logo"></a></div>
+                <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="Portfolio logo"></a></div>
                 <!-- 
                 Hamburger by: Mikael Ainalem
                 https://codepen.io/ainalem/pen/LJYRxz
@@ -56,7 +54,7 @@
         <main class="home-page page">
             
 
-            <section class="intro">
+            <section class="intro" id="intro">
 
                 <h1>
                     <span class="highlight">H</span>e<span class="highlight">llo</span><br />
@@ -67,59 +65,67 @@
                     <p>UX/UI Designer bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
                 </div>
 
-
-                <div class="resume-button">
-                    <a href="sharon-gu-resume.pdf" target="_blank">Resume</a>
-                </div>
+                <a class="resume-button" href="sharon-gu-resume.pdf" target="_blank">
+                    <span>Resume</span>
+                </a>
+                
+                <button class="down-arrow">
+                    <a href="#works">
+                        <img src="images/down-arrow.svg" alt="Scroll to Content">
+                    </a>
+                </button>
 
             </section><!--End of Inro-->
             
-            <section class="works">
+            <section class="works" id="works">
 
-                <figure class="work">
-                    <img src="" alt="">
-                    <p class="work-title"><span class="highlight">Dr.Hippo</span></p>
-                    <p class="work-description"></p>
+                <figure class="work work-1">
+                    <img src="images/hippo-preview.png" alt="Hippo project preview">
+                    <div class="work-overlay"></div>
+                    <p class="work-title"><span class="highlight">Dr. Hippo</span></p>
+                    <p class="work-description">Medical App UX Research | UI Design</p>
                 </figure>
 
-                <figure class="work">
-                    <img src="" alt="">
-                    <p class="work-title"><span class="highlight">Dr.Hippo</span></p>
-                    <p class="work-description"></p>
+                <figure class="work work-2">
+                    <img src="images/whatson-preview.png" alt="Whatson project preview">
+                    <p class="work-title"><span class="highlight">Whatson</span></p>
+                    <p class="work-description">Event Booking App UX Research | UI Design</p>
                 </figure>
 
-                <figure class="work">
-                    <img src="" alt="">
-                    <p class="work-title"><span class="highlight">Dr.Hippo</span></p>
-                    <p class="work-description"></p>
+                <figure class="work work-3">
+                    <img src="images/kitchenlife-preview.png" alt="kitchenlife project preview">
+                    <p class="work-title"><span class="highlight">Kitchenlife</span></p>
+                    <p class="work-description">Kitchenware Shopping Website UX Reasearch | UI Design</p>
                 </figure>
 
-                <figure class="work">
-                    <img src="" alt="">
-                    <p class="work-title"><span class="highlight">Dr.Hippo</span></p>
-                    <p class="work-description"></p>
+                <figure class="work work-4">
+                    <img src="images/homable-preview.png" alt="Whatson project preview">
+                    <p class="work-title"><span class="highlight">Homable</span></p>
+                    <p class="work-description">Accomddation Booking App UX Reaserch | UI Design</p>
                 </figure>
 
-                <figure class="work">
-                    <img src="" alt="">
-                    <p class="work-title"><span class="highlight">Dr.Hippo</span></p>
-                    <p class="work-description"></p>
-                </figure>
 
             </section><!--End of Works-->
 
-            <section class="mobile-social-links"></section>
-
-            <footer>
-                <div class="back-to-top">
-                    <p>Back to Top &#9650;</p>
-                </div>
-            </footer>
-
+            <section class="mobile-social-links">
+                <a href="https://www.linkedin.com/in/sharongu/" class="fa fa-linkedin" aria-hidden="true"></a>
+                <a href="https://www.behance.net/sharongulizard" class="fa fa-behance" aria-hidden="true"></a>
+                <a href="https://www.dribbble.com/Melizard" class="fa fa-dribbble" aria-hidden="true"></a>
+            </section>
 
         </main> <!--End of Page-->
-    </div> <!--End of Wrapper-->
 
+            <footer>
+                    <button onclick="topFunction()" id="back2top" title="Back to top">
+                        <p>Back to Top &#9650;</p>
+                    </button>
+            </footer>
+
+        </div> <!--End of Wrapper-->
+
+<script src="scripts/jquery-3.5.1.min.js"></script>
+<script src="scripts/smooth-scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/back2top.js"></script>
 </body>
 </html>
