@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the nav component.
+// This file contains all styles related to the hamburger component.
 // -----------------------------------------------------------------------------
 
 // Hamburger Styles
 .ham {
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     transition: transform 400ms;
@@ -16,6 +16,10 @@
     top: 0;
     right: 0;
     overflow-x: hidden;
+
+    .show &{
+      position: fixed;
+    }
   }
   .hamRotate.active {
     transform: rotate(45deg);
