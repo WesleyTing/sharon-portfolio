@@ -10,6 +10,7 @@ html {
   overflow-x: hidden; // Mainly prevents the hamburger button
                       // from expanding the html to the right
 
+
 }
 
 /**
@@ -32,7 +33,11 @@ a {
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    // Fill with hover effect
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
