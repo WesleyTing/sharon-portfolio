@@ -21,10 +21,13 @@
 @import
   'layout/header',
   'layout/nav',
+  'layout/main',
   'layout/footer';
 
 // 5. Components
 @import
+  'components/icons',
+  'components/scrollbar',
   'components/button',
   'components/hamburger';
 
