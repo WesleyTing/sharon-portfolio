@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the nav of the site/application.
+// -----------------------------------------------------------------------------
+
 // Top-bar Styles
 
 .top-bar{
@@ -19,10 +23,12 @@
     margin: auto;
     backdrop-filter: blur(3px);
     transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
 
     .show &{
         display: block;
         opacity: 1;
+        pointer-events: visible;
     }
 
     .overlay-content {
