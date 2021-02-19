@@ -2,8 +2,11 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+header {
+    height: 25vh;
+}
 
 .logo img {
-    width: 30px;
-    height: auto;
+    margin: 18px 0 0 26px;
+    width: 24px;
 }

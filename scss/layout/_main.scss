@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main of the site/application.
+// -----------------------------------------------------------------------------
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+main {
+    margin: 0 1.625rem;
+    // max-width: 500px;
+}
+
+.intro {
+    height: 75vh;
+    // Height of Intro after Subtracting
+    // from height of header and margin top
+}
