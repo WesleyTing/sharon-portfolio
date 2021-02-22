@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
 
-        <header>
+        <header id="header">
             <div class="top-bar">
                 <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="Portfolio logo"></a></div>
                 <!-- 
@@ -69,38 +69,64 @@
                     <span>Resume</span>
                 </a>
                 
-                <button class="down-arrow">
+                <!-- <button class="down-arrow">
                     <a href="#works">
                         <img src="images/down-arrow.svg" alt="Scroll to Content">
                     </a>
-                </button>
+                </button> -->
 
             </section><!--End of Inro-->
             
             <section class="works" id="works">
-
                 <figure class="work work-1">
-                    <img src="images/hippo-preview.png" alt="Hippo project preview">
-                    <div class="work-overlay"></div>
-                    <p class="work-title"><span class="highlight">Dr. Hippo</span></p>
+                    <a href="drhippo.html">
+                    <div class="preview-container">
+                        <img src="images/hippo-preview.png" alt="Hippo project preview">
+                        <div class="work-overlay">
+                            <h3 class="preview-title">Dr. H<span class="highlight">i</span>ppo</h3>
+                        </div>
+                    </div>
+                    </a>
+                    <!-- <p class="work-title"><a href="drhippo.html"><span class="highlight">Dr. Hippo</span></a></p> -->
                     <p class="work-description">Medical App UX Research | UI Design</p>
                 </figure>
 
                 <figure class="work work-2">
-                    <img src="images/whatson-preview.png" alt="Whatson project preview">
-                    <p class="work-title"><span class="highlight">Whatson</span></p>
+                    <a href="whatson.html">
+                    <div class="preview-container">
+                        <img src="images/whatson-preview.png" alt="Whatson project preview">
+                        <div class="work-overlay">
+                            <h3 class="preview-title">Whats<span class="highlight">o</span>n</h3>
+                        </div>
+                    </div>
+                    </a>
+                    <!-- <p class="work-title"><a href="whatson.html"><span class="highlight">Whatson</span></a></p> -->
                     <p class="work-description">Event Booking App UX Research | UI Design</p>
                 </figure>
 
                 <figure class="work work-3">
-                    <img src="images/kitchenlife-preview.png" alt="kitchenlife project preview">
-                    <p class="work-title"><span class="highlight">Kitchenlife</span></p>
+                    <a href="kitchenlife.html">
+                    <div class="preview-container">
+                        <img src="images/kitchenlife-preview.png" alt="kitchenlife project preview">
+                        <div class="work-overlay">
+                            <h3 class="preview-title">Kitch<span class="highlight">e</span>nlife</h3>
+                        </div>
+                    </div>
+                    </a>
+                    <!-- <p class="work-title"><a href="kitchenlife.html"><span class="highlight">Kitchenlife</span></a></p> -->
                     <p class="work-description">Kitchenware Shopping Website UX Reasearch | UI Design</p>
                 </figure>
 
-                <figure class="work work-4">
-                    <img src="images/homable-preview.png" alt="Whatson project preview">
-                    <p class="work-title"><span class="highlight">Homable</span></p>
+                <figure class="work work-4">    
+                    <a href="homeable.html">
+                    <div class="preview-container">
+                        <img src="images/homable-preview.png" alt="Whatson project preview">
+                        <div class="work-overlay">
+                            <h3 class="preview-title">Hom<span class="highlight">a</span>ble</h3>
+                        </div>
+                    </div>
+                    </a>
+                    <!-- <p class="work-title"><a href="homeable.html"><span class="highlight">Homable</span></a></p> -->
                     <p class="work-description">Accomddation Booking App UX Reaserch | UI Design</p>
                 </figure>
 
@@ -116,9 +142,9 @@
         </main> <!--End of Page-->
 
             <footer>
-                    <button onclick="topFunction()" id="back2top" title="Back to top">
-                        <p>Back to Top &#9650;</p>
-                    </button>
+                    <a class="back2top" href="#header">
+                        Back to Top &#9650;
+                    </a>
             </footer>
 
         </div> <!--End of Wrapper-->
@@ -126,6 +152,5 @@
 <script src="scripts/jquery-3.5.1.min.js"></script>
 <script src="scripts/smooth-scroll.js"></script>
 <script src="scripts/menu.js"></script>
-<script src="scripts/back2top.js"></script>
 </body>
 </html>
