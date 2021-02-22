@@ -10,20 +10,50 @@
 .work {
     position: relative;
 
-    img{
-        object-fit: cover;
+    .preview-container {
         width: 100%;
-        height: 300px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        // Fixes the overlay being bigger than the img
+        font-size: 0;
 
-
+        img{
+            object-fit: cover;
+            transition: all 0.5s ease-in-out;
+        }
     }
 
-    &:after {
+
+    .work-overlay {
         position: absolute;
-        background-color: black;
-        height: 300px;
-        width: 300px;
+        background-color: rgba(0, 0, 0, 0.486);
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
+        z-index: 100;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        // pointer-events: none;
+
+        h3 {
+            color: white;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .preview-container:hover .work-overlay {
+        opacity: 1;
+    }
+
+    .preview-container:hover img  {
+        transform: scale(1.05);
     }
 }
