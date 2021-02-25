@@ -23,6 +23,11 @@
                 Hamburger by: Mikael Ainalem
                 https://codepen.io/ainalem/pen/LJYRxz
                  -->
+                <div class="desktop-social-links">
+                    <a href="https://www.linkedin.com/in/sharongu/" class="fa fa-linkedin" aria-hidden="true"></a>
+                    <a href="https://www.behance.net/sharongulizard" class="fa fa-behance" aria-hidden="true"></a>
+                    <a href="https://www.dribbble.com/Melizard" class="fa fa-dribbble" aria-hidden="true"></a>
+                </div>
                 <div class="nav-toggle" aria-expanded="false" aria-controls="menu">
                     <svg alt="" class="ham hamRotate ham1 hamburger" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                         <path
@@ -39,15 +44,24 @@
                 </div>
                 <nav class="overlay">
                     <ul class="overlay-content">
-                        <li class='active-page'><a href="index.html">Work</a></li>
+                        <li class="active-page"><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>  
-
             </div>
 
         </header>
+
+        <section class="sidebar">
+            <nav>
+                <ul>
+                    <li class="active-page"'><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
 
 
 
@@ -79,7 +93,7 @@
             
             <section class="works" id="works">
                 <figure class="work work-1">
-                    <a href="drhippo.html">
+                    <a href="hippo.html">
                     <div class="preview-container">
                         <img src="images/hippo-preview.png" alt="Hippo project preview">
                         <div class="work-overlay">
@@ -87,14 +101,14 @@
                         </div>
                     </div>
                     </a>
-                    <!-- <p class="work-title"><a href="drhippo.html"><span class="highlight">Dr. Hippo</span></a></p> -->
+                    <!-- <p class="work-title"><a href="hippo.html"><span class="highlight">Dr. Hippo</span></a></p> -->
                     <p class="work-description">Medical App UX Research | UI Design</p>
                 </figure>
 
                 <figure class="work work-2">
                     <a href="whatson.html">
                     <div class="preview-container">
-                        <img src="images/whatson-preview.png" alt="Whatson project preview">
+                        <img srcset="images/whatson-preview.png 1x, images/whatson-desktop-preview.png 3x" src="images/whatson-preview.png" alt="Whatson project preview">
                         <div class="work-overlay">
                             <h3 class="preview-title">Whats<span class="highlight">o</span>n</h3>
                         </div>
