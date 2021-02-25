@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the overlay component.
+// -----------------------------------------------------------------------------
+
+// Overlay JS Fiddle at: http://jsfiddle.net/Paulie_D/T5pX2/7/
+.overlay {
+    opacity: 0;
+    position: fixed; 
+    width: 95%; 
+    height: 98%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(43, 43, 43, 0.9); 
+    z-index: 2; 
+    margin: auto;
+    backdrop-filter: blur(3px);
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+
+    .show &{
+        display: block;
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 1.8rem;
+
+    }
+}
