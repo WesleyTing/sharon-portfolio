@@ -10,43 +10,43 @@
     margin-top: 5rem;
     border-radius: 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.4rem;
     color: rgb(255, 255, 255);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: block;
-    width: 9rem;
-    height: 3rem;
+    width: 10rem;
+    height: 3.5rem;
 
     &:hover {
-        color: black;
+        background-color: $brand-color-hover;
     }
 
     &:after {
         content: '';
         position: absolute;
-        width: 9rem;
-        height: 3rem;
+        width: inherit;
+        height: inherit;
         top: 30%;
         left: 10%;
         border: 2px solid $brand-color;
-        z-index: 1;
+        z-index: -1;
     }
 
 }
 
-.down-arrow{
-    margin-top:  3rem;;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    margin: 5rem auto;
-    display: block;
-    outline: none;
+// .down-arrow{
+//     margin-top:  3rem;;
+//     border: none;
+//     cursor: pointer;
+//     background-color: transparent;
+//     margin: 5rem auto;
+//     display: block;
+//     outline: none;
 
-    @include on-event  {
-        color:black;
-    }
-}
+//     @include on-event  {
+//         color:black;
+//     }
+// }
 
 .back2top {
     width: 100%;
