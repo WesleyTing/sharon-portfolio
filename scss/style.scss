@@ -22,18 +22,26 @@
   'layout/header',
   'layout/nav',
   'layout/main',
-  'layout/footer';
+  'layout/footer',
+  'layout/sidebar';
 
 // 5. Components
 @import
   'components/icons',
   'components/scrollbar',
   'components/button',
-  'components/hamburger';
+  'components/hamburger',
+  'components/overlay';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/about',
+  'pages/contact',
+  'pages/projects/hippo',
+  'pages/projects/homable',
+  'pages/projects/kitchenlife',
+  'pages/projects/whatson';
 
 // 7. Themes
 @import
