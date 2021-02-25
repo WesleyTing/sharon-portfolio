@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sidebar of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.sidebar {
+    display: none;
+    position: fixed;
+    bottom: 15%;
+
+    @media (min-width: 600px) {
+            display: block;
+    }
+}
