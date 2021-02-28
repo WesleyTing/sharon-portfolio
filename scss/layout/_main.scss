@@ -4,21 +4,20 @@
 
 .wrapper {
     margin: 0 auto;
-    // max-width: 1000px;
-
+    max-width: 1300px;
 }
 
 main {
     margin: 0 1.625rem;
     
-    @media (min-width:600px) {
+    @include respond-to('medium') {
         margin-left: 250px;
+        margin-right: 40px;
     }
 
 }
 
 .intro {
-    height: 60vh;
 
     h1 {
         font-size: 3.5rem;
@@ -27,6 +26,8 @@ main {
     p {
         font-size: 1.4rem;
     }
+
+    margin-bottom: 6rem;
 
 
 }

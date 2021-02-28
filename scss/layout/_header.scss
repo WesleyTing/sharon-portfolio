@@ -3,10 +3,16 @@
 // -----------------------------------------------------------------------------
 
 header {
-    height: 20vh;
+    margin-bottom: 6rem;
+    // height: 15vh;
 }
 
 .logo img {
     margin: 18px 0 0 26px;
     width: 24px;
+
+    @include respond-to('medium') {
+        margin: 2rem 0 0 4rem;
+        position: fixed;
+    }
 }
