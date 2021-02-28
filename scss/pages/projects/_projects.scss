@@ -1,0 +1,57 @@
+.wrapper-project {
+
+
+    header {
+        margin-bottom: 0;
+    }
+
+    .top-bar {
+        height: 8rem;
+
+        .logo {
+
+            img {
+                position: relative;
+
+                @include respond-to('medium') {
+                    margin: 18px 0 0 26px;
+                }
+            }
+
+        }
+
+    }
+
+    .project-summary {
+        text-align: center;
+    }
+
+    .project-info {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: space-around;
+
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+    }
+
+    .desktop-project-nav {
+        display: none;
+        width: 50%;
+
+        @include respond-to('medium'){
+            display: block;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin: 16px 16px 0 0;
+            padding: 0;
+        }
+    }
+
+
+}
