@@ -31,13 +31,16 @@
   'components/scrollbar',
   'components/button',
   'components/hamburger',
-  'components/overlay';
+  'components/overlay',
+  'components/scrollReveal',
+  'components/typewriter';
 
 // 6. Page-specific styles
 @import
   'pages/home',
   'pages/about',
   'pages/contact',
+  'pages/projects/projects',
   'pages/projects/hippo',
   'pages/projects/homable',
   'pages/projects/kitchenlife',
