@@ -21,7 +21,7 @@
       position: fixed;
     }
 
-    @media (min-width: 600px) {
+    @include respond-to('medium') {
       display: none;
       
     }

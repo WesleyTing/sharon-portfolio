@@ -5,10 +5,11 @@
 
 .sidebar {
     display: none;
+    width: 30vh;
     position: fixed;
     bottom: 15%;
 
-    @media (min-width: 600px) {
+    @include respond-to('medium') {
             display: block;
     }
 }

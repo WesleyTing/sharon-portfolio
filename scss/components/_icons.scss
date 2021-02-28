@@ -5,8 +5,9 @@
 .desktop-social-links {
   display: none;
 
-  @media (min-width: 600px) {
+  @include respond-to('medium') {
     display: block;
+    margin-right: 40px;
   }
 }
 
@@ -14,8 +15,9 @@
   width: 100%;
   display: block;
   text-align: center;
+  margin: 1rem 0;
 
-  @media (min-width: 600px) {
+  @include respond-to('medium') {
     display: none;
   }
 }

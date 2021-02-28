@@ -23,6 +23,10 @@
         display: block;
         opacity: 1;
         pointer-events: visible;
+
+        @include respond-to('medium') {
+            display: none;
+        }
     }
 
     .overlay-content {
@@ -30,6 +34,5 @@
         top: 20%;
         left: 10%;
         font-size: 1.8rem;
-
     }
 }
