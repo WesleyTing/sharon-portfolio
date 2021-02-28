@@ -1,0 +1,73 @@
+.homable-page {
+
+    @include respond-to('medium') {
+        margin: 0;
+    }
+
+    .project-top {
+
+        @include respond-to('medium') {
+            display: flex;
+            justify-content:space-between;
+        }                                                                        
+
+        .project-summary {
+
+            h1 {
+                margin: 0;
+            }
+            
+            p {
+                // font-weight: bold;
+            }
+        }
+
+        .project-info {
+            
+            h3 {
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+
+        }
+    }
+    
+    .banner {
+        background-image: url('../images/homable/homable-page-banner.png');
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 -1.625rem;
+    }
+
+    .info {
+        margin: 4rem 0;
+    }
+
+    .persona {
+        
+        img {
+            width: 250px;
+            justify-content: center;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .persona-info {
+            font-weight: bold;
+
+            p {
+                margin: 0;
+                text-align: center;
+            }
+        }
+        
+    }
+
+    .persona-2 {
+        margin-top: 3rem;;
+    }
+
+
+}
