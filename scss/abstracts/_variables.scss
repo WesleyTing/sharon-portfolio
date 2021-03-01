@@ -55,10 +55,10 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small' : ( min-width: 320px ),
+  'small' : ( min-width: 400px ),
   'medium' : ( min-width: 650px ) ,
   'large' : ( min-width: 800px ),
-  'max' : ( min-width: 1100px ),
+  'max' : ( min-width: 1200px ),
 ) !default;
 
 
