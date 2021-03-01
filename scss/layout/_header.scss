@@ -12,7 +12,12 @@ header {
     width: 24px;
 
     @include respond-to('medium') {
-        margin: 2rem 0 0 4rem;
+        margin: 2rem 0 0 40px;
         position: fixed;
+        width: 26px;
+    }
+
+    @include respond-to('large') {
+        margin: 2rem 0 0 90px;
     }
 }

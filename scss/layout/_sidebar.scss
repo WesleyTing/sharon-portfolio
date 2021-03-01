@@ -5,11 +5,17 @@
 
 .sidebar {
     display: none;
-    width: 30vh;
+    width: 250px;
     position: fixed;
     bottom: 15%;
+    justify-content: center;
 
     @include respond-to('medium') {
             display: block;
+    }
+
+    @include respond-to('large') {
+        width: 300px;
+        margin-left: 50px;
     }
 }
