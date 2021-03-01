@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-.works {
+.grid {
     margin: 2rem 0 0;
 
     @include respond-to('medium') {
@@ -20,7 +20,7 @@
     }
 }
 
-.work {
+.grid-item {
     position: relative;
     margin-bottom: 3rem;
 
@@ -51,8 +51,41 @@
 
     .preview-title {
         color: $brand-color;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin: 12px 0 3px;
+        
+        @include respond-to('small') {
+            font-size: 1.6rem;
+        }
+        @include respond-to('medium') {
+            font-size: 1.8rem;
+        }
+        @include respond-to('large') {
+            font-size: 1.4rem;
+        }
+        @include respond-to('max') {
+            font-size: 1.8rem;
+        }
+    }
+
+    .preview-description {
+        font-size: 1rem;
+        
+        @include respond-to('small') {
+            font-size: 1.2rem;
+        }
+        @include respond-to('medium') {
+            font-size: 1.4rem;
+        }
+        @include respond-to('large') {
+            font-size: 1.1rem;
+        }
+        @include respond-to('max') {
+            font-size: 1.4rem;
+        }
+
+
+        
     }
 
     .preview-description {
