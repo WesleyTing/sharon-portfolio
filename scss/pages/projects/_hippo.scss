@@ -1,0 +1,212 @@
+.hippo-banner {
+    background-image: url('../images/hippo/hippo-page-banner.png');
+}
+
+.hippo-page {
+
+
+
+    p {
+        margin-top: 8px;
+    }
+
+    .user-research {
+
+        @include respond-to('large') {
+            display: flex;
+        }
+
+        h2 {
+            
+            @include respond-to('large') {
+                margin-bottom:  2.5rem;
+            }
+
+        }
+        
+        img {
+            width: 70%;
+            margin: 3rem auto;
+            display: block;
+            justify-content: space-between;
+
+            @include respond-to('large') {
+                width: 40%;
+                margin-right: 0;
+            }
+        }
+
+        .user-research-text {
+
+            @include respond-to('large') {
+                width: 50%;
+            }
+        }
+
+    }
+
+    .persona {
+
+        @include respond-to('large') {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .persona-text {
+            @include respond-to('large') {
+                width: 50%;
+            }
+        }
+
+        .persona-quote {
+            color: grey;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 2rem;
+            max-width: 220px;
+        }
+
+        .persona-info {
+            margin-top: 2rem;
+
+            @include respond-to('large') {
+                width: 40%;
+            }
+            
+
+
+            .persona-details {
+
+                
+                @include respond-to('medium') {
+                    max-width: 300px;
+                    margin: 2rem auto 0;
+
+                }
+
+                img {
+
+                    @include respond-to('large') {
+                        width: 40%;
+                    }
+
+                }
+                
+
+            }
+        }
+
+        .highlight {
+            color: rgb(7, 117, 245);
+            font-weight: bold;
+        }
+    }
+
+    .hippo-logo {
+
+
+        img {
+            display: block;
+            margin: 3rem auto;
+            width: 70%;
+
+            @include respond-to('large') {
+                width: 40%;
+                margin-bottom: 0;
+
+            }
+
+            &:nth-of-type(2) {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                
+                @include respond-to('large') {
+                    margin: auto;
+                }
+            
+            }
+        }
+
+        .logo-container {
+
+            @include respond-to('large') {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+
+
+    .phone-container {
+
+        @include respond-to('large') {
+            margin-bottom: 2rem;
+        }
+
+        .info {
+
+            @include respond-to('large') {
+                margin: 0;
+            }
+
+        }
+
+        @include respond-to('large') {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr;
+
+        }
+
+        }
+
+    }
+
+
+    .profile-image {
+
+            margin: 0;
+
+            @include respond-to('large') {
+                 grid-column: 2;
+                 grid-row: 1 / span 2; 
+                 margin: auto;  
+
+    
+            }
+
+            img {
+                display: block;
+                width: 50%;
+                margin: 0 auto;
+
+        }
+    }
+
+    .future-improvement {
+
+        ul {
+            list-style: none;
+
+            @include respond-to('large') {
+                padding: 0;
+
+            li {
+                font-size: 1rem;
+
+                @include respond-to('small') {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+    }
+
+}
