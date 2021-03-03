@@ -1,0 +1,150 @@
+.wrapper-whatson {
+    
+    .banner {
+        background-image: url('../images/whatson/whatson-page-banner.png');
+    }
+
+}
+
+.whatson-page {
+
+    img {
+        margin: 2rem auto 0;
+    }
+
+    .info {
+        margin: 3rem 0;
+    }
+    
+
+    .insights-container {
+
+        @media (min-width: 500px) {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: space-around;
+            grid-column-gap: 20px;
+            
+            .insight {
+                width: 100%;
+            }
+        }
+
+        @include respond-to('large') {
+            grid-template-columns: 20% 20% 20% 20%;
+
+        }
+
+
+
+        img {
+            display: block;
+            width: 25%;
+
+            @media (min-width:500px) {
+                width: 30%;
+            }
+
+            @include respond-to('large') {
+                width: 45%;
+            }
+
+        }
+
+        p {
+            max-width: 250px;
+            margin: 2rem auto 0;
+
+            @media (min-width:500px) {
+                max-width: 250px;
+            }
+        }
+
+        .insight {
+            margin: 3rem 0;
+
+            @media (min-width:500px) {
+                margin: 0;
+            }
+        }
+    }
+
+    .persona {
+
+        .persona-info {
+
+            @include respond-to('medium') {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 50%;
+                    margin: auto;
+                }
+
+
+                .persona-quote {
+                    width: 40%;
+                    margin: 0;
+                }
+
+                .persona-text {
+                    width: 50%;
+
+                    @include respond-to('large') {
+                        width: 60%;
+                    }
+
+                    @include respond-to('max') {
+                        width: 65%;
+                    }
+                };
+
+            }
+        }
+ 
+        img {
+            width: 45%;
+            display: block;
+        }
+
+        .persona-quote {
+            color: rgb(230, 0, 115);
+            max-width: 160px;
+            margin: 0 auto;
+
+            @include respond-to('small') {
+                max-width: 220px;
+            }
+        }
+
+        .citation {
+            margin-left: 10px;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .me-page {
+        
+        @include respond-to('medium') {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+                margin: auto;
+                margin-left: 0;
+            }
+
+            .text-container {
+                width: 40%;
+            }
+        }
+
+
+    }
+
+    
+}
