@@ -1,5 +1,6 @@
 .wrapper-project {
 
+    max-width: 1000px;
 
     header {
         margin-bottom: 0;
@@ -22,27 +23,16 @@
 
     }
 
-    .project-summary {
-        text-align: center;
-    }
-
-    .project-info {
-        display: flex;
-        margin-bottom: 3rem;
-        justify-content: space-around;
-
-        ul {
-            list-style: none;
-            margin: 0;
-        }
-    }
-
     .desktop-project-nav {
         display: none;
-        width: 50%;
+        width: 70%;
 
         @include respond-to('medium'){
             display: block;
+        }
+
+        @include respond-to('large') {
+            width: 60%;
         }
         
         ul {
@@ -52,6 +42,144 @@
             padding: 0;
         }
     }
+
+    .banner {
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 -1.625rem;
+    }
+
+    .project-top {
+
+        justify-content: center;
+
+        @include respond-to('medium') {
+            display: flex;
+        }         
+
+        .project-summary {
+            text-align: center;
+            
+            
+            @include respond-to('medium') {
+                width: 50%;
+                text-align: left;
+                margin-left: 18px;
+            }
+            @include respond-to('large') {
+                width: 50%;
+                text-align: left;
+                margin-left: 18px;
+            }
+
+            h1 {
+                
+                @include respond-to('small') {
+                    font-size: 3.5rem;
+                }
+                @include respond-to('medium') {
+                    margin-top: 0;
+                    font-size: 3.5rem;
+                    margin-bottom: 18px;
+                }
+                @include respond-to('large') {
+                }
+
+            }
+
+            p {
+                width: 100%;
+                max-width: unset;
+            }
+
+        }
+
+        .project-info {
+            margin: 0 auto 3rem;
+            display: flex;
+            max-width: 500px;
+            text-align: center;
+
+            @include respond-to ('medium') {
+                width: 50%;
+                // margin-left: 28px;
+                margin-right: 0;
+            }
+            @include respond-to ('large') {
+                text-align: unset;
+                margin-left: 30px;
+            }
+
+
+            h3 {
+                font-weight: normal;
+                margin-bottom: 8px
+            }
+
+            ul {
+                width: 33%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    font-size: 0.8rem;
+
+                    @include respond-to('small'){
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.project-page {
+    margin: 1.5rem;
+
+    @include respond-to('small') {
+        margin: 3rem;
+    }
+
+    @include respond-to('medium') {
+        margin: 0 5rem;
+    }
+
+    .info {
+        margin: 2rem 0;
+    }
+
+    p {
+        max-width: unset;
+         
+        @include respond-to('medium') {
+            font-size: 1.1rem;
+        }
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+
+        @include respond-to('medium') {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .onboarding, .user-flow, .wireframe, 
+    .home-display, .appointment, .report,
+    .message, .profile  {
+        
+        img {
+            margin: 2rem auto 0;
+        }
+
+    }
+
 
 
 }
