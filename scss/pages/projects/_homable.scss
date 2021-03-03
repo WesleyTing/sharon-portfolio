@@ -1,58 +1,49 @@
-.homable-page {
-
-    @include respond-to('medium') {
-        margin: 0;
-    }
-
-    .project-top {
-
-        @include respond-to('medium') {
-            display: flex;
-            justify-content:space-between;
-        }                                                                        
-
-        .project-summary {
-
-            h1 {
-                margin: 0;
-            }
-            
-            p {
-                // font-weight: bold;
-            }
-        }
-
-        .project-info {
-            
-            h3 {
-                font-weight: normal;
-                margin-bottom: 8px;
-            }
-
-        }
-    }
+.wrapper-homable {
     
     .banner {
         background-image: url('../images/homable/homable-page-banner.png');
-        height: 50vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 -1.625rem;
     }
 
+}
+
+.homable-page {
+
     .info {
-        margin: 4rem 0;
+        margin: 3.5rem 0;
+    }
+
+    .persona-container {
+
+        @include respond-to('large') {
+            display: flex;
+            justify-content: space-between;
+        }
+
     }
 
     .persona {
+
+        @include respond-to('large') {
+            width: 45%;
+        }
         
         img {
-            width: 250px;
-            justify-content: center;
+            width: 50%;
+            margin: 0 auto 1rem;
             display: block;
-            margin: 0 auto 20px;
+            margin-top: 2rem;
+            max-width: 220px;
         }
+
+        .description {
+            max-width: 300px;
+            margin: 2rem auto;
+
+            @include respond-to('large') {
+                margin-bottom: 0;
+            }
+        }
+        
 
         .persona-info {
             font-weight: bold;
@@ -66,8 +57,162 @@
     }
 
     .persona-2 {
-        margin-top: 3rem;;
+        margin-top: 3rem;
+
+        @include respond-to('large') {
+            margin: 0;
+        }
+        
     }
 
+    .homable-logo, .home-screen, .reservation, 
+    .favorites, .choose-room {
+
+        img {
+            margin: 2rem auto 0;
+        }
+    }
+
+    .reservation-info {
+        margin-bottom: 1rem;
+    }
+
+    .profile {
+        margin-bottom: 0;
+
+        @include respond-to('medium') {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .onboarding {
+
+        .container {
+            
+            @include respond-to('large') {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p {
+
+                @include respond-to('large') {
+                    width: 35%;
+                    margin: auto;
+                }
+
+            }
+
+            img {
+
+                @include respond-to('large') {
+                    width: 50%;
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .choose-room.info {
+
+        @include respond-to('medium') {
+            margin: 0;
+        }
+
+
+    }
+
+
+    .choose-room {
+
+        .container {
+            padding: 0;
+            
+            @include respond-to('medium') {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-bottom: 0;
+
+                img {
+                    width: 45%;
+                    margin: 0;
+                }
+
+                .text-container {
+                    width: 45%;
+                    margin-top: 2rem;      
+                }
+            }
+        }
+    }
+
+    .reservation {
+
+        img {
+            width: 50%;
+            display: block;
+        }
+
+        @include respond-to('medium') {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+
+            img {
+                width: 35%;
+                margin: 0;
+
+            }
+
+            .text-container {
+                width: 55%;
+                margin: auto;
+            }
+
+        }
+    }
+
+    .favorites {
+
+        @include respond-to('medium') {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+                margin: 0;
+            }
+
+            .text-container {
+                width: 40%;
+            }
+
+        }
+    }
+
+    .profile {
+
+        @include respond-to ('medium') {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+                margin: 0;
+            }
+
+            .text-container {
+                width: 45%;
+            }
+        }
+
+
+
+    }
 
 }
