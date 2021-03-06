@@ -58,13 +58,13 @@
             font-size: 1.6rem;
         }
         @include respond-to('medium') {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
         @include respond-to('large') {
             font-size: 1.4rem;
         }
         @include respond-to('max') {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
     }
 
@@ -75,13 +75,13 @@
             font-size: 1.2rem;
         }
         @include respond-to('medium') {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
         @include respond-to('large') {
             font-size: 1.1rem;
         }
         @include respond-to('max') {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
 
 
