@@ -63,7 +63,7 @@
         <div class="project-top">
             <div class="project-summary">
                 <h1>Dr. Hippo</h1>
-                <p>Medical App</p>
+                <p>A modern approach to connecting a patient to a doctor</p>
             </div>
 
             <div class="project-info">
@@ -91,44 +91,121 @@
 
         <main class="page project-page hippo-page ">
             <div class="overview info">
-                <h2>Overview</h2>
-                <p>Dr. Hippo is an mobile app that allows users to search viable clinics, book doctor appointments, video/text consulting with doctors, track medical test results or report and other health services. </p>
+                <h2>Project Overview</h2>
+                <p>Dr. Hippo is a case study of mine that I made to utilize <a class="highlight" href="https://www.interaction-design.org/literature/article/what-is-design-thinking-and-why-is-it-so-popular"> design thinking</a> as my main design processor. </p>
+                <p>My goal was to include 5 main steps within my project:</p>
+                <ul>
+                    <li>Empathize</li>
+                    <li>Define</li>
+                    <li>Ideate</li>
+                    <li>Prototype</li>
+                    <li>Test</li>
+                </ul>
+                <p>By using these 5 actions, I was able to address the end users’ problems with more intuition.</p>
             </div>
             
             <div class="pain-point info">
-                <h2>Pain Point</h2>
-                <p>It is not convenient for people to go to hospital in-person during the pandemic and some clinics only offer virtual services. The key words for a virtual medical service app is convenience, easy-access and simple-navigation.</p>
+                <h2>Empathize</h2>
+                <p>During the start of the pandemic I developed a minor rash that I hadn’t noticed before. It grew worse as time passed and I knew I had to get in touch with a doctor, but I was reluctant to go to a clinic as I felt it was unsafe at the time. So I opted to book an appointment for a phone call with the doctor.</p>
+                <p>The whole process went like this:</p>
+                <ol>
+                    <li><span>Call the clinic for an appointment.</span></li>
+                    <li><span>Wait for a call from the doctor on the arranged date and time.</span></li>
+                    <li><span>Describe the symptoms to the doctor and wait for a diagnosis.</span></li>
+                    <li><span>Referred to another doctor that specializes in the kind of problem I have.</span></li>
+                    <li><span>More waiting.</span></li>
+                    <li><span>Clinic calls to arrange an in-person check with the doctor.</span></li>
+                    <li><span>Meet with doctor and am prescribed medication for my problem.</span></li>
+                </ol>
+                <p>Throughout all the waiting and worry, I thought to myself:</p>
+                <p class="highlight">What could be improved in the system to efficiently help both the patient and doctor?</p>
+            </div>
+
+            <div class="background-research info">
+                <h2></h2>
+                    <p>Before I conducted qualitative interviews to local potential users, I found a few key discoveries from secondary research:</p>
+                    <ul>
+                        <li>Half of all Canadians have now accessed a physician using virtual care options and are highly satisfied with the results</li>
+                        <li>46% of Canadians who had the opportunity to use virtual care since the pandemic outbreak would prefer a virtual method as a first point of contact with their doctor</li>
+                    </ul>
+                    <p><a class="source" href="https://www.cma.ca/sites/default/files/pdf/News/Virtual_Care_discussionpaper_v2EN.pdf">*source: CMA Health Summit-VIRTUAL CARE IN CANADA:Discussion paper</a></p>
+                    <p>The findings showed that almost half of Canadians preferred to use virtual doctors both during and probably after the pandemic. As the population started paying more attention to the severity of Covid-19, phone call appointments became the main way of contact between a doctor and a patient. </p>
+                    <p>But there are those that still hesitated to make virtual appointments due to reasons such as <span class="bold-text"> technological inconveniences</span>, <span class="bold-text">lack of inclusivity</span>, and <span class="bold-text">issues in communication</span>.</p>
             </div>
             
+            <div class="assumptions info">
+                <p>Even though patients were concerned with the risks or restrictions of going to a clinic in-person, many still preferred to see a doctor in-person. In this section, I want to explore the potential reasons behind it. </p>
+                <p>Based on my secondary research, personal experience, and thoughts from friends, I came up with the following assumptions:</p>
+                <ul>
+                    <li>A doctor’s diagnosis is heavily limited when solely relying on what the patient tells them.</li>
+                    <li>Patients may have various healthcare providers unknown to the doctor (ex. Telemedicine (add link) applications) therefore doctor’s don’t have access to previous health or medication records.</li>
+                    <li>Technology itself being a barrier and having to jump through various hoops before finally getting an appointment can be a turnoff to using online health services.</li>
+                </ul>
+                <p>So I began to think on how Dr. Hippo could improve these issues:</p>
+                <ul>
+                    <li><span class="bold-text">How might we improve the communication between doctors and patients?</span></li>
+                    <li><span class="bold-text">How might weprovide more accurate and suitable suggestions for users to find medical services?</span></li>
+                    <li><span class="bold-text">How might weprovide an all-in-one stop for information?</span></li>
+                </ul>
+            </div>
+
             <div class="user-research info">
                 <span class="user-research-text">
                     <h2>User Research</h2>
-                    <p>To solve the main pain point, there are 3 main insights: how might we improve the communication between doctors and users, how might we provide more accurate and useful demand for users to find medical services and how might we integrate the medical information.</p>
+                    <p>To test my assumptions, I collected insights from 6 users through 1-hour qualitative interviews. The demography of all interviewees is as followed:</p>
+                    <ul>
+                        <li>Ages between 25 – 45</li>
+                        <li>Visits any healthcare service (ex. Clinic, Therapist, Psychologist) at least twice a year.</li>
+                        <li>Is concerned with the risks of in-person appointments</li>
+                        <li>Understands basic operations of using mobile apps</li>
+                        <li>Has tried at least one telemedicine service </li>
+                    </ul>
                 </span>
                 <img src="../images/hippo/user-research.png" alt="Wall of User Research sticky notes">
             </div>
 
-            <div class="persona info">
-                
-                <div class="persona-text">
-                    <h2>Persona</h2>
-                    <p>Serena is currently a florist and owns her own store in Vancouver. She keeps a healthy life life style and does a regular yearly body checkup with her family doctor. She doesn’t have any chronicle past medication history and when she usually won’t visit a doctor if a pharmacist can help her. During the pandemic, the in-person doctor appointment gets more difficulties for her and she would like to talk to doctors online if it is not big, which also makes herself feel safe.</p>
-
-                    <p class="persona-quote">“If I can just consult with my dermatologist by just sending a photo of my back.”</p>
-                </div>
-
-                <div class="persona-info">
-                    <img src="../images/hippo/persona-1.png" alt="Image of persona, Serena">
-
-                    <div class="persona-details">
-                        <p><span class="highlight">Age:</span> 35 years old</p>
-                        <p><span class="highlight">Occupation:</span> Florist</p>
-                        <p><span class="highlight">Medication History:</span> None</p>
-                        <p><span class="highlight">Frequency of Doctor Appointment:</span><br>Around 3 times per year (including one routine annual checkup)</p>
-                    </div>
-                </div>
+            <div class="user-research-result info">
+                <p>The main focus during testing was to evaluate how people view phone call and online medical appointments, and what their concerns are and what they hope to experience.</p>
+                <p>Here is part of the questions list:</p>
+                <img src="../images/hippo/questionnaire.png" alt="questionnaire questions">
+                <p>I collected the insights from the interviewees and grouped them into the following topics:</p>
+                <img src="../images/hippo/main-findings.png" alt="findings of user research">
             </div>
 
+            <div class="define info">
+                <p>The aforementioned interviews showed that people were mainly concerned with current methods of talking to doctors online or by phone and whether virtual calling is accurate enough.</p>
+                <p>The main pain points are:</p>
+                <ul>
+                    <li><span class="bold-text">Lack of information</span></li>
+                    <li><span class="bold-text">Fear of unclear communication</span></li>
+                    <li><span class="bold-text">Time wastage</span></li>
+                </ul>
+                <p>As a result of my findings, I redefined the scope of my project to focus on:</p>
+                <img src="../images/hippo/how-might-we.png" alt="define">
+            </div>
+
+            <div class="user-persona info">
+                <h2>Persona</h2>
+                <p>Based on the insights, quotes from interviews and secondary research, I developed my persona Serena to identify the questions</p>
+                <img src="../images/hippo/user-persona.png" alt="user-persona">
+            </div>
+            
+            <div class="user-storyboard info">
+                <h2>Storyboard</h2>
+                <p>To have a better understanding what scenario Serena will experience and how her emotion changes if she use a virtual appointment application to conduct a doctor appointment, I create a storyboard as following. In this process, I can pinpoint the most crucial section that I can improve:</p>
+                <img src="../images/hippo/storyboarding.png" alt="illustration of user storyboard">
+            </div>
+
+
+            <div class="user-flow info">
+                <h2>User Flow</h2>
+                <img src="../images/hippo/user-flow.png" alt="Dr. Hippo user flow">
+            </div>
+
+            <div class="wireframe info">
+                <h2>Wireframe</h2>
+                <img src="../images/hippo/wireframe.png" alt="Dr.Hippo wireframe">
+            </div>
 
             <div class="hippo-logo info">
                 <div class="hippo-logo-text">
@@ -145,16 +222,6 @@
             <div class="onboarding info">
                 <h2>Onboarding</h2>
                 <img src="../images/hippo/onboarding-display.gif" alt="Dr.Hippo log-in display">
-            </div>
-
-            <div class="user-flow info">
-                <h2>User Flow</h2>
-                <img src="../images/hippo/user-flow.png" alt="Dr. Hippo user flow">
-            </div>
-
-            <div class="wireframe info">
-                <h2>Wireframe</h2>
-                <img src="../images/hippo/wireframe.png" alt="Dr.Hippo wireframe">
             </div>
 
             <div class="home-display info">
@@ -194,11 +261,11 @@
                 <div class="future-improvement info">
                     <h2>Future Improvement</h2>
                     <ul>
-                        <li>- Web Version</li>
-                        <li>- Online Payment</li>
-                        <li>- Customized health plan</li>
-                        <li>- Purchase Insurance</li>
-                        <li>- Communities </li>
+                        <li> Web Version</li>
+                        <li> Online Payment</li>
+                        <li> Customized health plan</li>
+                        <li> Purchase Insurance</li>
+                        <li> Communities </li>
                     </ul>
                 </div>
             </div>

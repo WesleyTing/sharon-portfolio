@@ -4,7 +4,43 @@
 
 .hippo-page {
 
+    .highlight {
+        color: rgb(7, 117, 245);
+        font-weight: bold;
+    }
 
+    .bold-text {
+        font-weight: bold;
+    }
+
+    .source {
+        color: rgb(197, 197, 197);
+        font-style: italic;
+        margin-top: 2rem;
+    }
+
+    ul, ol {
+            
+        @include respond-to('large') {
+            padding: 0;
+            padding-left: 2rem;
+
+        li {
+            font-size: 1rem;
+
+            @include respond-to('small') {
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+
+            span {
+                display: block;
+                margin-left: 1.2rem;
+                }
+            }
+        }
+
+    }
 
     p {
         margin-top: 8px;
@@ -19,7 +55,7 @@
         h2 {
             
             @include respond-to('large') {
-                margin-bottom:  2.5rem;
+                margin-bottom:  2rem;
             }
 
         }
@@ -102,10 +138,7 @@
             }
         }
 
-        .highlight {
-            color: rgb(7, 117, 245);
-            font-weight: bold;
-        }
+        
     }
 
     .hippo-logo {
@@ -193,10 +226,10 @@
     .future-improvement {
 
         ul {
-            list-style: none;
-
+            
             @include respond-to('large') {
                 padding: 0;
+                padding-left: 2rem;
 
             li {
                 font-size: 1rem;
