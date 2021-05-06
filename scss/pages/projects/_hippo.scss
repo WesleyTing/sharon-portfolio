@@ -9,6 +9,15 @@
         font-weight: bold;
     }
 
+    .extra-highlight {
+        background-color: rgb(7, 117, 245);
+        color: white;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        padding: 1.5rem 2.5rem;
+    }
+
     .bold-text {
         font-weight: bold;
     }
@@ -62,6 +71,7 @@
         
         img {
             width: 70%;
+            height: 70%;
             margin: 3rem auto;
             display: block;
             justify-content: space-between;
