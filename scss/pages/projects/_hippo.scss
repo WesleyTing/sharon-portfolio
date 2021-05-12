@@ -36,6 +36,7 @@
 
         li {
             font-size: 1rem;
+            font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 
             @include respond-to('small') {
                 font-size: 1.1rem;
